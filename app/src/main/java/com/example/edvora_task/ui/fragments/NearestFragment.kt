@@ -8,10 +8,12 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.edvora_task.R
 import com.example.edvora_task.adapter.RidesAdapter
+import com.example.edvora_task.model.RidesItem
 import com.example.edvora_task.ui.MainActivity
 import com.example.edvora_task.ui.RidesViewModel
 import com.example.edvora_task.util.Resource
 import kotlinx.android.synthetic.main.fragment_nearest.*
+import kotlin.math.abs
 
 class NearestFragment : Fragment(R.layout.fragment_nearest) {
 

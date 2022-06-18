@@ -8,6 +8,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.edvora_task.R
 import com.example.edvora_task.repository.RidesRepository
 import com.example.edvora_task.ui.fragments.NearestFragment
+import com.example.edvora_task.ui.fragments.PastFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,6 @@ class MainActivity : AppCompatActivity() {
         val viewModelProviderFactory=RidesViewModelProviderFactory(repository)
         viewModel= ViewModelProvider(this,viewModelProviderFactory).get(RidesViewModel::class.java)
 //        bottomNavigationView.setupWithNavController(newsNavHostFragment.findNavController())
-        supportFragmentManager.beginTransaction().replace(R.id.fvFragment,NearestFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fvFragment,PastFragment()).commit()
     }
 }
