@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nearestFragment"
+        android:title="Nearest"/>
+
+    <item android:id="@+id/upcomingFragment"
+        android:title="Upcoming"/>
+
+    <item android:id="@+id/pastFragment"
+        android:title="Past"/>
+</menu>
