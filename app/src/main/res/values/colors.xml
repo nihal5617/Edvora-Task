@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#101010</color>
     <color name="primaryDark">#292929</color>
+    <color name="for_list">#171717</color>
 </resources>
