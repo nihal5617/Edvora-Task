@@ -14,8 +14,6 @@ import com.example.edvora_task.ui.MainActivity
 import com.example.edvora_task.ui.RidesViewModel
 import com.example.edvora_task.util.Resource
 import kotlinx.android.synthetic.main.fragment_nearest.*
-import org.threeten.bp.LocalDate
-import org.threeten.bp.format.DateTimeFormatter
 
 class PastFragment : Fragment(R.layout.fragment_past) {
 
@@ -54,13 +52,13 @@ class PastFragment : Fragment(R.layout.fragment_past) {
 //        val formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy")
 //        val formatted = current.format(formatter)
         val formatted = 20220619
-        var myList:Rides = Rides()
+        val myList = Rides()
         Log.e("Here", formatted.toString())
         for(i in rides.iterator()){
-            var new = i.date!!.substring(0,10)
-            var n = new.split('/')
-            var str = n[2]+n[0]+n[1]
-            var num = str.toInt()
+            val new = i.date!!.substring(0,10)
+            val n = new.split('/')
+            val str = n[2]+n[0]+n[1]
+            val num = str.toInt()
             if(num < formatted){
                 myList.add(i)
             }

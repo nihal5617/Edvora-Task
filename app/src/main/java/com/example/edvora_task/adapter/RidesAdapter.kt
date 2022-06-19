@@ -1,5 +1,6 @@
 package com.example.edvora_task.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
@@ -36,6 +37,7 @@ class RidesAdapter: RecyclerView.Adapter<RidesAdapter.RidesItemViewHolder>(){
         )
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: RidesItemViewHolder, position: Int) {
         val ride = differ.currentList[position]
         holder.itemView.apply {
@@ -58,7 +60,6 @@ class RidesAdapter: RecyclerView.Adapter<RidesAdapter.RidesItemViewHolder>(){
         }
         return min
     }
-
     override fun getItemCount(): Int {
         return differ.currentList.size
     }
